@@ -1,0 +1,14 @@
+C:\Users\Ростислав\source\repos\OrdersLogic\OrdLogicLib\bin\Debug\net7.0\OrdLogicLib.deps.json
+C:\Users\Ростислав\source\repos\OrdersLogic\OrdLogicLib\bin\Debug\net7.0\OrdLogicLib.runtimeconfig.json
+C:\Users\Ростислав\source\repos\OrdersLogic\OrdLogicLib\bin\Debug\net7.0\OrdLogicLib.dll
+C:\Users\Ростислав\source\repos\OrdersLogic\OrdLogicLib\bin\Debug\net7.0\OrdLogicLib.pdb
+C:\Users\Ростислав\source\repos\OrdersLogic\OrdLogicLib\obj\Debug\net7.0\OrdLogicLib.csproj.AssemblyReference.cache
+C:\Users\Ростислав\source\repos\OrdersLogic\OrdLogicLib\obj\Debug\net7.0\OrdLogicLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ростислав\source\repos\OrdersLogic\OrdLogicLib\obj\Debug\net7.0\OrdLogicLib.AssemblyInfoInputs.cache
+C:\Users\Ростислав\source\repos\OrdersLogic\OrdLogicLib\obj\Debug\net7.0\OrdLogicLib.AssemblyInfo.cs
+C:\Users\Ростислав\source\repos\OrdersLogic\OrdLogicLib\obj\Debug\net7.0\OrdLogicLib.csproj.CoreCompileInputs.cache
+C:\Users\Ростислав\source\repos\OrdersLogic\OrdLogicLib\obj\Debug\net7.0\OrdLogicLib.dll
+C:\Users\Ростислав\source\repos\OrdersLogic\OrdLogicLib\obj\Debug\net7.0\refint\OrdLogicLib.dll
+C:\Users\Ростислав\source\repos\OrdersLogic\OrdLogicLib\obj\Debug\net7.0\OrdLogicLib.pdb
+C:\Users\Ростислав\source\repos\OrdersLogic\OrdLogicLib\obj\Debug\net7.0\OrdLogicLib.genruntimeconfig.cache
+C:\Users\Ростислав\source\repos\OrdersLogic\OrdLogicLib\obj\Debug\net7.0\ref\OrdLogicLib.dll

@@ -1,0 +1,56 @@
+﻿<Window x:Class="OrdersLogic.PaymentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrdersLogic"
+        mc:Ignorable="d"
+        Title="Платеж" Height="575" Width="810">
+    <Grid>
+        <ComboBox x:Name="OrderComboBox" HorizontalAlignment="Left" Height="24" Margin="596,28,0,0" VerticalAlignment="Top" Width="194" SelectionChanged="OrderComboBox_SelectionChanged"/>
+        <ListView x:Name="OrderList" Margin="20,57,20,405">
+            <ListView.View>
+                <GridView AllowsColumnReorder="true" ColumnHeaderToolTip="Products Information" >
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=IdOrder}" Header="Номер Заказа" Width="185"/>
+
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=OrderDate}" Header="Дата Заказа" Width="185"/>
+
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Sum}" Header="Сумма Заказа" Width="185"/>
+
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Balance}" Header="Сумма Оплаты" Width="185"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Выбрать заказ" HorizontalAlignment="Left" Height="24" Margin="9,28,0,0" VerticalAlignment="Top" Width="192"/>
+        <ListView x:Name="TrancheList" Margin="20,198,20,262">
+            <ListView.View>
+                <GridView AllowsColumnReorder="true" ColumnHeaderToolTip="Products Information" >
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=IdTranche}" Header="Номер Прихода денег" Width="185"/>
+
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=TrancheDate}" Header="Дата Прихода денег" Width="185"/>
+
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Sum}" Header="Сумма Прихода денег" Width="185"/>
+
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Residual}" Header="Остаток" Width="185"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ComboBox x:Name="TrancheComboBox" HorizontalAlignment="Left" Height="24" Margin="595,169,0,0" VerticalAlignment="Top" Width="195"  SelectionChanged="TrancheComboBox_SelectionChanged"/>
+        <Label Content="Выбрать приход денег" HorizontalAlignment="Left" Height="24" Margin="10,169,0,0" VerticalAlignment="Top" Width="192"/>
+        <ListView x:Name="PaymentsList" Margin="20,340,20,31">
+            <ListView.View>
+                <GridView AllowsColumnReorder="true" ColumnHeaderToolTip="Products Information" >
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=IdOrder}" Header="Номер Заказа" Width="248"/>
+
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=IdTranche}" Header="Номер Прихода Денег" Width="248"/>
+
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=TotalPayment}" Header="Сумма Платежа" Width="248"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button x:Name="AddPayment" Content="Добавить платеж" HorizontalAlignment="Left" Height="32" Margin="596,286,0,0" VerticalAlignment="Top" Width="194" Click="AddPayment_Click"/>
+        <Button x:Name="ShowPayment" Content="Показать платежи" HorizontalAlignment="Center" Height="32" Margin="0,286,0,0" VerticalAlignment="Top" Width="194" Click="ShowPayment_Click"/>
+        <Button x:Name="ShowOrderTranche" Content="Обновить Таблицы" HorizontalAlignment="Left" Height="32" Margin="20,286,0,0" VerticalAlignment="Top" Width="194" Click="ShowOrderTranche_Click"/>
+    </Grid>
+</Window>
