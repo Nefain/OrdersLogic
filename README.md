@@ -13,7 +13,7 @@
 ## Описание
 При запуске производится появлется окно требущие логин и пароль пользователя, после входа в аккаунт, пользователь может выбрать заказ и транш денеженый и создать платеж по заказу
 
-## Для работы требуется поменять строку подключения в appsettings.json, а именно Server и Database
+Для работы требуется поменять строку подключения в appsettings.json, а именно Server и Database
 ```json
 "ConnectionStrings": {
     "DefaultConnection": "Server=localhost\\SQLEXPRESS;Database=OrdersLogic;Trusted_Connection=True;Encrypt=false;"
