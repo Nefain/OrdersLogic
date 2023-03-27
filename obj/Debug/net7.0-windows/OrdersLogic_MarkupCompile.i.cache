@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\Ростислав\source\repos\OrdersLogic\App.xaml
-51403069010
+31801657107
 
-221621356862
+18-1818781190
 215-905623568
-Views\LoginWindow.xaml;Views\OrderView.xaml;Views\PaymentWindow.xaml;Views\SumWindow.xaml;Views\TrancheView.xaml;
+Views\LoginWindow.xaml;Views\PaymentWindow.xaml;Views\SumWindow.xaml;
 
-True
+False
 

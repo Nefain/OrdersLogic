@@ -4,11 +4,9 @@ C:\Users\Ростислав\source\repos\OrdersLogic\bin\Debug\net7.0-windows\Or
 C:\Users\Ростислав\source\repos\OrdersLogic\bin\Debug\net7.0-windows\OrdersLogic.dll
 C:\Users\Ростислав\source\repos\OrdersLogic\bin\Debug\net7.0-windows\OrdersLogic.pdb
 C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\OrdersLogic.csproj.AssemblyReference.cache
-C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\Views\TrancheView.g.cs
 C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\App.g.cs
 C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\OrdersLogic_MarkupCompile.cache
 C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\OrdersLogic_MarkupCompile.lref
-C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\Views\TrancheView.baml
 C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\OrdersLogic.g.resources
 C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\OrdersLogic.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\OrdersLogic.AssemblyInfoInputs.cache
@@ -20,8 +18,6 @@ C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\re
 C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\OrdersLogic.pdb
 C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\OrdersLogic.genruntimeconfig.cache
 C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\ref\OrdersLogic.dll
-C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\Views\OrderView.g.cs
-C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\Views\OrderView.baml
 C:\Users\Ростислав\source\repos\OrdersLogic\bin\Debug\net7.0-windows\appsettings.json
 C:\Users\Ростислав\source\repos\OrdersLogic\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
 C:\Users\Ростислав\source\repos\OrdersLogic\obj\Debug\net7.0-windows\Views\SumWindow.g.cs

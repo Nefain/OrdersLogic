@@ -364,3 +364,5 @@ FodyWeavers.xsd
 /Company.Tests
 /Company.Console
 /SolutionTaks.md
+
+!README.md
