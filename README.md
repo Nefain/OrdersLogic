@@ -14,7 +14,7 @@
 ## Реализованные приложения работают SQL Server
 В БД хранится 4 таблицы, код для создания таблиц
 
-###Orders
+### Orders
 ```sql
 CREATE TABLE [dbo].[Orders] (
     [IdOrder]   UNIQUEIDENTIFIER NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE [dbo].[Orders] (
     CONSTRAINT [PK_Orders] PRIMARY KEY CLUSTERED ([IdOrder] ASC)
 );
 ```
-###Payments
+### Payments
 ```sql
 CREATE TABLE [dbo].[Payments] (
     [IdOrder]      UNIQUEIDENTIFIER NOT NULL,
@@ -75,7 +75,7 @@ BEGIN
     WHERE o.IdOrder = inserted.IdOrder
 END
 ```
-###Tranches
+### Tranches
 ```sql
 CREATE TABLE [dbo].[Tranches] (
     [IdTranche]   UNIQUEIDENTIFIER NOT NULL,
@@ -85,7 +85,7 @@ CREATE TABLE [dbo].[Tranches] (
     CONSTRAINT [PK_Tranches] PRIMARY KEY CLUSTERED ([IdTranche] ASC)
 );
 ```
-###Users
+### Users
 ```sql
 CREATE TABLE [dbo].[Users] (
     [UserId]           UNIQUEIDENTIFIER NOT NULL,
