@@ -13,6 +13,18 @@
 ## Описание
 При запуске производится появлется окно требущие логин и пароль пользователя, после входа в аккаунт, пользователь может выбрать заказ и транш денеженый и создать платеж по заказу
 
+## Для работы требуется поменять строку подключения в appsettings.json, а именно Server и Database
+```json
+"ConnectionStrings": {
+    "DefaultConnection": "Server=localhost\\SQLEXPRESS;Database=OrdersLogic;Trusted_Connection=True;Encrypt=false;"
+  }
+```
+Так же для работы требуется создать пользователей в таблице Users, требуется так же вписать туда id_order поэтому для работы требуется уже созданные Заказы
+```sql
+INSERT INTO Users (UserId, Name, Password, UserOrdersIdGuid)
+VALUES (NEWID(), 'User1', 'user1', 'insert_any_id_order');
+```
+
 ## Реализованные приложения работают SQL Server
 В БД хранится 4 таблицы, код для создания таблиц
 
