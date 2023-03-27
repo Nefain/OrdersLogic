@@ -1,20 +1,35 @@
+
 # Тествое задание по созданию простого приложение, с БД на MS Sql Server Express, и клиентскую часть на WPF. 
 
 ## Задание:
-Схема таблиц : 
-      * Заказы (Номер, Дата, Сумма, СуммаОплаты) 
-      * Приход денег (Номер, Дата, Сумма, Остаток) 
-      * Платежи (Заказ + Приход  денег, Сумма платежа) 
+Схема таблиц :
+
+     * Заказы (Номер, Дата, Сумма, СуммаОплаты) 
+     * Приход денег (Номер, Дата, Сумма, Остаток) 
+     * Платежи (Заказ + Приход  денег, Сумма платежа) 
+     
 Под приходом денег понимаются самостоятельные единицы взносов, которые позже можно использовать для платежей. Интерфейс должен реализовать возможность выбора прихода денег и привязки к заказу. При этом «СуммаОплаты» заказа должна увеличиваться, а «Остаток» прихода денег уменьшаться (логику необходимо реализовать с помощью триггеров БД). Заказ может быть оплачен несколькими платежами, а также одни и те же приходы денег  могут быть использованы в нескольких платежах, пока остаток не закончится. Так же необходимо учитывать ситуацию, когда два пользователя пытаются привязать оплату одновременно к одному заказу.
 
 
-## Описание реализованного клиентского приложения на WPF и приложение реализованное хранящее миграции и модели, ипосльзующее EF Core 
+## Описание
 При запуске производится появлется окно требущие логин и пароль пользователя, после входа в аккаунт, пользователь может выбрать заказ и транш денеженый и создать платеж по заказу
+
+Для работы требуется поменять строку подключения в appsettings.json, а именно Server и Database
+```json
+"ConnectionStrings": {
+    "DefaultConnection": "Server=localhost\\SQLEXPRESS;Database=OrdersLogic;Trusted_Connection=True;Encrypt=false;"
+  }
+```
+Так же для работы требуется создать пользователей в таблице Users, требуется так же вписать туда id_order поэтому для работы требуется уже созданные Заказы
+```sql
+INSERT INTO Users (UserId, Name, Password, UserOrdersIdGuid)
+VALUES (NEWID(), 'User1', 'user1', 'insert_any_id_order');
+```
 
 ## Реализованные приложения работают SQL Server
 В БД хранится 4 таблицы, код для создания таблиц
 
-###Orders
+### Orders
 ```sql
 CREATE TABLE [dbo].[Orders] (
     [IdOrder]   UNIQUEIDENTIFIER NOT NULL,
@@ -24,7 +39,7 @@ CREATE TABLE [dbo].[Orders] (
     CONSTRAINT [PK_Orders] PRIMARY KEY CLUSTERED ([IdOrder] ASC)
 );
 ```
-###Payments
+### Payments
 ```sql
 CREATE TABLE [dbo].[Payments] (
     [IdOrder]      UNIQUEIDENTIFIER NOT NULL,
@@ -75,7 +90,7 @@ BEGIN
     WHERE o.IdOrder = inserted.IdOrder
 END
 ```
-###Tranches
+### Tranches
 ```sql
 CREATE TABLE [dbo].[Tranches] (
     [IdTranche]   UNIQUEIDENTIFIER NOT NULL,
@@ -85,7 +100,7 @@ CREATE TABLE [dbo].[Tranches] (
     CONSTRAINT [PK_Tranches] PRIMARY KEY CLUSTERED ([IdTranche] ASC)
 );
 ```
-###Users
+### Users
 ```sql
 CREATE TABLE [dbo].[Users] (
     [UserId]           UNIQUEIDENTIFIER NOT NULL,
