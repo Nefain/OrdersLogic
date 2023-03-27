@@ -18,6 +18,7 @@ using System.Windows.Shapes;
 using OrdersLogic.Views;
 using System.Windows.Ink;
 using OrdersLogic.Models;
+using System.ComponentModel;
 
 namespace OrdersLogic
 {
@@ -43,8 +44,13 @@ namespace OrdersLogic
                 TrancheComboBox.Items.Add($"{i.IdTranche}\n");
             }
             _crurrenUser = currentUser;
+            Closing += OnWindowClosing;
         }
-
+        public void OnWindowClosing(object sender, CancelEventArgs e)
+        {
+            LoginWindow taskWindow = new LoginWindow();
+            taskWindow.Show();
+        }
         private void AddPayment_Click(object sender, RoutedEventArgs e)
         {
             SumWindow sumWindow = new SumWindow();
