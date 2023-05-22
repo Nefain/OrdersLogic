@@ -72,8 +72,8 @@ BEGIN
     JOIN inserted ON t.IdTranche = inserted.IdTranche
     WHERE t.IdTranche = inserted.IdTranche
 END
-GO
 
+GO
 CREATE TRIGGER UpdateBalance
 ON [dbo].[Payments]
 AFTER INSERT
